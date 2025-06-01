@@ -18,14 +18,22 @@ app.set("views", "views");
 app.set("view engine", "ejs");
 
 //4 routing code
-app.get("/problem", function (req, res) {
-    res.end("Problem");
+//app.get("/hello", function (req, res) {
+  //  res.end("Problem");
+//});
+//app.get("/gift", function (req, res) {
+  //  res.end("salom Jamshid ");
+//});
+app.post("/create-item", (req, res) => {
+    console.log(req.body);
+    res.json({test: "success"});
 });
-app.get("/gift", function (req, res) {
-    res.end("salom Jamshid ");
+
+app.get("/", function (req, res) {
+  res.render("harid");
 });
 const server = http.createServer(app);
-let PORT = 4000;
+let PORT = 4505;
 server.listen(PORT, function () {
     console.log(`the server is running successfully on port: ${PORT}`);
 });
