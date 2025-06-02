@@ -1,9 +1,9 @@
 {
-"name": "Steve",
+"name": "Jamshid",
 "profession": "Software Engineer",
 "age": 20,
 "residence": "South Korea",
-"adress": "S.Korea, Busan",
+"address": "S.Korea, Busan",
 "language": ["Uzbek","Korean", "English"],
 "skills": ["Html", "Css","Js","NodeJS","Python"],
 "extra skills": ["Bootstrap, Materialize", "Styling, Sass", "Django, Flask", "GIT Knowledge"],
