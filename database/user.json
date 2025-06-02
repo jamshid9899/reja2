@@ -1,0 +1,20 @@
+{
+"name": "Steve",
+"profession": "Software Engineer",
+"age": 20,
+"residence": "South Korea",
+"adress": "S.Korea, Busan",
+"language": ["Uzbek","Korean", "English"],
+"skills": ["Html", "Css","Js","NodeJS","Python"],
+"extra skills": ["Bootstrap, Materialize", "Styling, Sass", "Django, Flask", "GIT Knowledge"],
+"work_place": "IT Company",
+"service_desc": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+"about me": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sollicitudin luctus dapibus. Mauris nunc mauris, rhoncus id pulvinar eget, posuere non dui.",
+"city": "Denua",
+"title": ["Flower", "Seedlings", "Gardner", "Old", "New"],
+"flower_desc": "",
+"flower_name": "",
+"flower_price": "",
+"famous_words": "",
+"famous_name": ""
+}
