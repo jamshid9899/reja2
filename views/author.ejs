@@ -55,23 +55,49 @@
                 </div>
                 <div class="marginer"></div>
                 <div class="left_2">
-                    <div class="left_2-1">
-                        <div class="label">Age</div>
-                        <div class="value"><%= user.age %></div>
-                    </div>
-                    <div class="left_2-1">
-                        <div class="label">Residence</div>
-                        <div class="value"><%= user.residence %></div>
-                    </div>
-                    <div class="left_2-1">
-                        <div class="label">Address</div>
-                        <div class="value"><%= user.address %></div>
-                    </div>
+                    <div class="object">Age:</div> <div class="space"></div>
+                    <div class="class-age"><%=user.age%></div>
+                    <div class="object">Residence:</div> <div class="space"></div>
+                    <div class="class-residence"><%=user.residence%></div>
+                    <div class="object">Freelance:</div> <div class="space"></div>
+                    <div class="class-freelance"><%=user.freelance%></div>
+                    <div class="object">Address:</div> <div class="space"></div>
+                    <div class="class-age"><%=user.address%></div>
                 </div>
                 <div class="marginer"></div>
                 <div class="left_3">
-
+                <div class="Language-section">
+                <h1>Languages</h1>
+                <div class="Language">
+                <div class="Language-title">
+                <span><%=user.language[0]%></span>
+                <span>100%</span>
                 </div>
+                <div class="progress-bar">
+                <div class="progress-fill" style="width:100%;"></div>
+                 </div>
+                </div>
+
+                <div class="Language">
+                <div class="Language-title">
+                <span><%=user.language[1]%></span>
+                <span>80%</span>
+                </div>
+                <div class="progress-bar">
+                <div class="progress-fill" style="width: 80%;"></div>
+                 </div>
+                </div>
+
+                <div class="Language">
+                <div class="Language-title">
+                <span><%=user.language[2]%></span>
+                <span>60%</span>
+                </div>
+                <div class="progress-bar">
+                <div class="progress-fill" style="width: 60%;"></div>
+                 </div>
+                </div>
+
                 <div class="marginer"></div>
                 <div class="left_4"></div>
                 <div class="marginer"></div>

@@ -45,7 +45,7 @@ app.get("/", function (req, res) {
   res.render("harid");
 });
 const server = http.createServer(app);
-let PORT = 5001;
+let PORT = 5002;
 server.listen(PORT, function () {
     console.log(`the server is running successfully on port: ${PORT}`);
 });

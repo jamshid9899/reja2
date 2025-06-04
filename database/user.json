@@ -1,9 +1,10 @@
 {
 "name": "Jamshid",
 "profession": "Software Engineer",
-"age": 20,
-"residence": "South Korea",
-"address": "S.Korea, Busan",
+"age": 26,
+"residence": "Uzbekistan",
+"address": "S.Korea, Seoul",
+"freelance": "Available",
 "language": ["Uzbek","Korean", "English"],
 "skills": ["Html", "Css","Js","NodeJS","Python"],
 "extra skills": ["Bootstrap, Materialize", "Styling, Sass", "Django, Flask", "GIT Knowledge"],
