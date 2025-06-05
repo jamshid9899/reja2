@@ -6,110 +6,234 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/main.css">
   <title>Portfolia</title>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"  rel="stylesheet"/>
- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <div class="frame">
-        <div class="main_frame">
-            <div class="left_frame">
-                <div class="left_1">
-                    <div class="left_1-1">
-                        <img src="images/profile.png" width="156px" height="142px" alt=""
-                        />
-                    </div>
-                     <div class="left_1-2"><%= user.name %></div>
-                     <div class="left_1-3"><%= user.profession %></div>
-                       <div class="left-icons">
-                        <a class="link.href"  href="">
-                            <div class="icon">
-                                <img src="icon/facebook.svg" class="icon-1"/>
-                            </div>
-                        </a>
-                       <a class="link.href"  href="">
-                            <div class="icon">
-                                <img src="icon/instagram.svg" class="icon-1"/>
-                            </div>
-                        </a>
-                       <a class="link.href"  href="">
-                            <div class="icon">
-                                <img src="icon/twitter.svg" class="icon-1"/>
-                            </div>
-                        </a>
-                       <a class="link.href"  href="">
-                            <div class="icon">
-                                <img src="icon/linkeding.svg" class="icon-1"/>
-                            </div>
-                        </a>
-                       <a class="link.href"  href="">
-                            <div class="icon">
-                                <img src="icon/youtube.svg" class="icon-1"/>
-                            </div>
-                        </a>
-                       <a class="link.href"  href="">
-                            <div class="icon">
-                                <img src="icon/dribbble.svg" class="icon-1"/>
-                            </div>
-                        </a>
-                       </div>
-                </div>
-                <div class="marginer"></div>
-                <div class="left_2">
-                    <div class="object">Age:</div> <div class="space"></div>
-                    <div class="class-age"><%=user.age%></div>
-                    <div class="object">Residence:</div> <div class="space"></div>
-                    <div class="class-residence"><%=user.residence%></div>
-                    <div class="object">Freelance:</div> <div class="space"></div>
-                    <div class="class-freelance"><%=user.freelance%></div>
-                    <div class="object">Address:</div> <div class="space"></div>
-                    <div class="class-age"><%=user.address%></div>
-                </div>
-                <div class="marginer"></div>
-                <div class="left_3">
-                <div class="Language-section">
-                <h1>Languages</h1>
-                <div class="Language">
-                <div class="Language-title">
-                <span><%=user.language[0]%></span>
-                <span>100%</span>
-                </div>
-                <div class="progress-bar">
-                <div class="progress-fill" style="width:100%;"></div>
-                 </div>
-                </div>
-
-                <div class="Language">
-                <div class="Language-title">
-                <span><%=user.language[1]%></span>
-                <span>80%</span>
-                </div>
-                <div class="progress-bar">
-                <div class="progress-fill" style="width: 80%;"></div>
-                 </div>
-                </div>
-
-                <div class="Language">
-                <div class="Language-title">
-                <span><%=user.language[2]%></span>
-                <span>60%</span>
-                </div>
-                <div class="progress-bar">
-                <div class="progress-fill" style="width: 60%;"></div>
-                 </div>
-                </div>
-
-                <div class="marginer"></div>
-                <div class="left_4"></div>
-                <div class="marginer"></div>
-                <div class="left_5"></div>
-                <div class="marginer"></div>
-            </div>
-            </div>
-            <div class="midd_frame"></div>
-            <div class="right_frame"></div>
+  <div class="frame">
+    <div class="main_frame">
+      
+      <!-- LEFT FRAME -->
+      <div class="left_frame">
+        
+        <!-- LEFT 1: Profile -->
+        <div class="left_1">
+          <div class="left_1-1">
+            <img src="images/profile.png" width="156px" height="142px" alt="Profile Picture" />
+          </div>
+          <div class="left_1-2"><%= user.name %></div>
+          <div class="left_1-3"><%= user.profession %></div>
+          <div class="left-icons">
+            <a href=""><div class="icon"><img src="icon/facebook.svg" class="icon-1" /></div></a>
+            <a href=""><div class="icon"><img src="icon/instagram.svg" class="icon-1" /></div></a>
+            <a href=""><div class="icon"><img src="icon/twitter.svg" class="icon-1" /></div></a>
+            <a href=""><div class="icon"><img src="icon/linkedin.svg" class="icon-1" /></div></a>
+            <a href=""><div class="icon"><img src="icon/youtube.svg" class="icon-1" /></div></a>
+            <a href=""><div class="icon"><img src="icon/dribbble.svg" class="icon-1" /></div></a>
+          </div>
         </div>
+
+        <div class="marginer"></div>
+
+        <!-- LEFT 2: Basic Info -->
+        <div class="left_2">
+          <div class="object">Age:</div>
+          <div class="space"></div>
+          <div class="class-age"><%= user.age %></div>
+
+          <div class="object">Residence:</div>
+          <div class="space"></div>
+          <div class="class-residence"><%= user.residence %></div>
+
+          <div class="object">Freelance:</div>
+          <div class="space"></div>
+          <div class="class-freelance"><%= user.freelance %></div>
+
+          <div class="object">Address:</div>
+          <div class="space"></div>
+          <div class="class-age"><%= user.address %></div>
+        </div>
+
+        <div class="marginer"></div>
+
+        <!-- LEFT 3: Languages -->
+        <div class="left_3">
+          <div class="Language-section">
+            <h1>Languages</h1>
+
+            <div class="Language">
+              <div class="Language-title">
+                <span><%= user.language[0] %></span>
+                <span>100%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width:100%;"></div>
+              </div>
+            </div>
+
+            <div class="Language">
+              <div class="Language-title">
+                <span><%= user.language[1] %></span>
+                <span>80%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 80%;"></div>
+              </div>
+            </div>
+
+            <div class="Language">
+              <div class="Language-title">
+                <span><%= user.language[2] %></span>
+                <span>60%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 60%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="marginer"></div>
+
+        <!-- LEFT 4: Skills -->
+        <div class="left_4">
+          <div class="skills-section">
+            <h3>Skills</h3>
+
+            <div class="skill">
+              <div class="skill-title">
+                <span><%= user.skills[0] %></span>
+                <span>90%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 90%;"></div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <div class="skill-title">
+                <span><%= user.skills[1] %></span>
+                <span>85%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 85%;"></div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <div class="skill-title">
+                <span><%= user.skills[2] %></span>
+                <span>80%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 80%;"></div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <div class="skill-title">
+                <span><%= user.skills[3] %></span>
+                <span>75%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 75%;"></div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <div class="skill-title">
+                <span><%= user.skills[4] %></span>
+                <span>85%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 85%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="marginer"></div>
+
+        <!-- LEFT 5: Extra Skills -->
+        <div class="left_5">
+          <h3>Extra Skills</h3>
+          <div class="extra-skills">
+            <span><img src="btn_icom/icons.svg" /><%= user.extraSkills[0] %></span>
+            <span><img src="btn_icom/icons.svg" /><%= user.extraSkills[1] %></span>
+            <span><img src="btn_icom/icons.svg" /><%= user.extraSkills[2] %></span>
+            <span><img src="btn_icom/icons.svg" /><%= user.extraSkills[3] %></span>
+          </div>
+        </div>
+
+        <div class="marginer"></div>
+      </div> <!-- END left_frame -->
+      <!-- MIDDLE FRAME -->
+   <div class="midd_frame">
+  <div class="middle-1">
+    <div class="middle-1-info">
+      <h1 class="middle-1-welcome">
+        <%= user.profession %> in <%= user.work_place %>
+      </h1>
+      <p class="about-me_description"><%= user.about_me %></p>
+      <button class="hire-me">HIRE ME ==></button>
     </div>
+    <div class="middle-1_img">
+      <img src="images/person.png" alt="User image" />
+    </div>
+  </div>
+  <div class="middle-2">
+  <h2>My Services</h2>
+  <p class="about-me_description" style="margin: 0 auto 50px auto; max-width: 800px; text-align: center;">
+    <%= user.service_desc %>
+  </p>
+
+  <div class="flex-container">
+    <div class="flex-item">
+      <img src="menu_icon/Web development.svg" alt="Web Development">
+      <h4>Web Development</h4>
+      <p class="about-me_description">Blog, E-commerce</p>
+    </div>
+
+    <div class="flex-item">
+      <img src="menu_icon/UI_UX design.svg" alt="UI/UX Design">
+      <h4>UI/UX Design</h4>
+      <p class="about-me_description">Mobile App, Website Design</p>
+    </div>
+
+    <div class="flex-item">
+      <img src="menu_icon/Sound design.svg" alt="Sound Design">
+      <h4>Sound Design</h4>
+      <p class="about-me_description">Voice Over, Beat Making</p>
+    </div>
+
+    <div class="flex-item">
+      <img src="menu_icon/Game design.svg" alt="Game Design">
+      <h4>Game Design</h4>
+      <p class="about-me_description">Character Design, Props & Objects</p>
+    </div>
+
+    <div class="flex-item">
+      <img src="menu_icon/Photography.svg" alt="Photography">
+      <h4>Photography</h4>
+      <p class="about-me_description">Portrait, Product Photography</p>
+    </div>
+
+    <div class="flex-item">
+      <img src="menu_icon/Advertising.svg" alt="Advertising">
+      <h4>Advertising</h4>
+      <p class="about-me_description"></p>
+    </div>
+  </div>
+</div>
+
+
+        
+      
+
+      <!-- RIGHT FRAME -->
+      <div class="right_frame"></div>
+      
+    </div> <!-- END main_frame -->
+  </div> <!-- END frame -->
 </body>
 </html>
-
-

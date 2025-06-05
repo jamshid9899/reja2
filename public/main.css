@@ -16,7 +16,6 @@
     flex-direction: row;
     align-items: center;
     margin-top: 2px;
-    background: #f7f6b9;
 }
 
 .main_frame .left_frame {
@@ -27,17 +26,8 @@
     display: flex;
     flex-direction: column;
 }
-.main_frame .midd_frame {
-    position: relative;
-    width: 970px;
-    height: 1259px;
-    margin-left: 30px;
-    margin-right: 27px;
-    display: flex;
-    flex-direction: column;
-}
 
-.main_frame .right_frame {
+/* .main_frame .right_frame {
     position: relative;
     width: 108px;
     height: 1315px;
@@ -45,7 +35,7 @@
     display: flex;
     flex-direction: column;
     background-color: white
-}
+} */
 .main_frame .left_1 {
     position: relative;
     width: 228px;
@@ -196,6 +186,7 @@
 .Language-section {
     width: 220px;
     font-family: sans-serif;
+    margin-left: 25px;
 }
 .Language {
     margin-bottom: 20px;
@@ -221,27 +212,139 @@
     border-radius: 4px;
 }
 
-.main_frame .left_frame .left_4 {
-    position: relative;
-    width: 220px;
-    height: 252px;
-    margin-left: 45px;
-    margin-top: 25px;
-    background-color: aqua;
-} 
-
-/* .skills-section {
+.skills-section {
     font-family: sans-serif;
     width: 220px;
-} */
-
-.main_frame .left_frame .left_5 {
-    position: relative;
-    width: 186px;
-    height: 148px;
-    margin-left: 45px;
-    margin-top: 25px;
-    background-color: aqua;
+    margin-left: 15px;
 }
 
+.skill {
+    margin-bottom: 15px;
+}
 
+.skill-title {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+.progress-bar {
+    height: 6px;
+    border-radius: 4px;
+    background-color: #ffe0a3;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background-color: olivedrab;
+    border-radius: 4px;
+}
+
+.left_5 {
+    width: 186px;
+    position: relative;
+    margin-left: 44px;
+}
+
+.extra-skills {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 16px;
+    color: #777;
+}
+.extra-skills img {
+    margin-right: 10px;
+}
+
+.main_frame .midd_frame {
+    position: relative;
+    width: 970px;
+    height: 1259px;
+    margin-left: 30px;
+    margin-right: 27px;
+    display: flex;
+    flex-direction: column;
+}
+.main_frame .midd_frame .middle-1 {
+    padding: 3rem 2rem 0 3rem;
+    height: 447px;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.middle-1_img {
+    text-align: right;
+}
+.middle-1-welcome {
+    margin-top: 88px;
+    font-size: 36px;
+    font-weight: bold;
+    color: #05364e;
+}
+
+.about-me_description {
+    font-size: 1rem;
+    font-weight: 300;
+    margin-top: 20px;
+    color: #797979;
+    line-height: 1.69rem;
+}
+
+.hire-me{
+    border: none;
+    background-color: #ffb400;
+    color: black;
+    padding: 1.26rem 2.5rem;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 40px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-size: 200% auto;
+}
+/* .main_frame .midd_frame .middle-2 {
+    position: relative;
+    width: 970px;
+    height: 653px;
+    display: block;
+    flex-direction: column;
+    font-family: sans-serif;
+    background-color: white;
+    justify-content: center;
+     align-items: center; 
+} */
+ .flex-container {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+ }
+
+ .flex-item {
+    width: 310px;
+    height: 225px;
+    background-color: white;
+    font-weight: bold;
+    margin-bottom: 20px;
+    align-content: center;
+ }
+ 
+ .my services h2 {
+    text-align: center;
+    margin-top: 200px;
+    margin-bottom: 10px;
+ }
+
+.main_frame .right_frame {
+    position: relative;
+    width: 108px;
+    height: 1315px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+}

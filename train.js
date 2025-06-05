@@ -1,20 +1,20 @@
 // A -task
-let word = "obodonlashtiraolmaganimizda";
-let letter = "a";
+// let word = "obodonlashtiraolmaganimizda";
+// let letter = "a";
 
-function countLetter(word, letter) {
-    let count = 0;
-    for (let i = 0; i < word.length; i++) {
-        if (word[i] === letter) {
-            count++;
-        }
-    }
-    console.log(`${word} da "${letter}" harfi ${count} ta`); 
-}
-countLetter(word, letter); 
-countLetter(word, "o");
-countLetter(word, "i");
-countLetter("Jaloliddin", "d");
+// function countLetter(word, letter) {
+//     let count = 0;
+//     for (let i = 0; i < word.length; i++) {
+//         if (word[i] === letter) {
+//             count++;
+//         }
+//     }
+//     console.log(`${word} da "${letter}" harfi ${count} ta`); 
+// }
+// countLetter(word, letter); 
+// countLetter(word, "o");
+// countLetter(word, "i");
+// countLetter("Jaloliddin", "d");
 
         // console.log("Jack Ma maslahatlari");
 // const list = [
@@ -67,3 +67,23 @@ countLetter("Jaloliddin", "d");
     // console.log(javob);
 // }
 // run();
+
+//  ⭐️ Asynchronous: CALLBACK, ASYNC && PROMISE
+
+// DEFINE
+function qoldiqliBolish(a, b, cb) {
+  if (b === 1) {
+    callback("Mahraj nolga teng bololmaydi", null);
+  } else {
+    cb(null, a % b, true);
+  }
+}
+
+// CALL
+qoldiqliBolish(10, 3, (err, data,) => {
+  if (err) {
+    console.log("Error:", err);
+  } else {
+    console.log("Data:", data);
+  }
+});
