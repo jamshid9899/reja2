@@ -38,15 +38,23 @@ app.set("view engine", "ejs");
   //  res.end("salom Jamshid ");
 //});
 app.post("/create-item", (req, res) => {
-    // console.log(req.body);
-    // res.json({test: "success"});
+    console.log(req.body);
+    res.end("success");
 });
 // app.get('/author', (req, res) => {
 //   res.render("author", { user: user});
 // })
 
 app.get("/", function (req, res) {
-  res.render("Reja");
+  db.collection("plans",find().toArraay((err, data) => {
+    if (err) {
+      console.log(err);
+      res.end("something went wrong");
+    } else {
+      console.log(data);
+       res.render("Reja");
+    }
+  }))
 });
 // const server = http.createServer(app);
 // let PORT = 5002;

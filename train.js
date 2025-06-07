@@ -1,3 +1,15 @@
+// B task
+function countDigits(str) {
+  let count = 0;
+  for (let value of str) {
+    if (value >= '0' && value <= '9') {
+      count++;
+    }
+  }
+  return count;
+}
+console.log(countDigits("76kLG8y1OjHoYYoy")); //bu yerda 4ta
+
 // A -task
 // let word = "obodonlashtiraolmaganimizda";
 // let letter = "a";
@@ -71,19 +83,19 @@
 //  ⭐️ Asynchronous: CALLBACK, ASYNC && PROMISE
 
 // DEFINE
-function qoldiqliBolish(a, b, cb) {
-  if (b === 1) {
-    callback("Mahraj nolga teng bololmaydi", null);
-  } else {
-    cb(null, a % b, true);
-  }
-}
+// function qoldiqliBolish(a, b, cb) {
+//   if (b === 1) {
+//     callback("Mahraj nolga teng bololmaydi", null);
+//   } else {
+//     cb(null, a % b, true);
+//   }
+// }
 
-// CALL
-qoldiqliBolish(10, 3, (err, data,) => {
-  if (err) {
-    console.log("Error:", err);
-  } else {
-    console.log("Data:", data);
-  }
-});
+// // CALL
+// qoldiqliBolish(10, 3, (err, data,) => {
+//   if (err) {
+//     console.log("Error:", err);
+//   } else {
+//     console.log("Data:", data);
+//   }
+// });
