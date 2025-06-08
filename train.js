@@ -1,14 +1,14 @@
-// B task
-function countDigits(str) {
-  let count = 0;
-  for (let value of str) {
-    if (value >= '0' && value <= '9') {
-      count++;
-    }
-  }
-  return count;
-}
-console.log(countDigits("76kLG8y1OjHoYYoy")); //bu yerda 4ta
+// // B task
+// function countDigits(str) {
+//   let count = 0;
+//   for (let value of str) {
+//     if (value >= '0' && value <= '9') {
+//       count++;
+//     }
+//   }
+//   return count;
+// }
+// console.log(countDigits("76kLG8y1OjHoYYoy")); //bu yerda 4ta
 
 // A -task
 // let word = "obodonlashtiraolmaganimizda";
