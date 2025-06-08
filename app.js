@@ -11,7 +11,8 @@ fs.readFile("database/user.json", "utf8", (err, data) => {
   }
 });
 
-// MongoDB connect
+// MongoDB call
+const db = require("./server").db();
 // 1 Kirish code
 app.use(express.static("public"));
 app.use(express.json());
@@ -34,5 +35,6 @@ app.get("/", function (req, res) {
 });
 
 // Serverni ishga tushirish
+
 
 module.exports = app;
