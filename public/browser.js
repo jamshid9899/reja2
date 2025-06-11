@@ -1,3 +1,5 @@
+
+
 console.log("Front End JS ishga tushdi");
 
 function itemTemplate(item) {
@@ -12,7 +14,8 @@ function itemTemplate(item) {
             <button 
             data-id="${item._id}" 
             class="delete-me btn btn-danger btn-sm">
-              Ochirish</button>
+              Ochirish
+              </button>
           </div>
         </li>`;
 }
@@ -21,9 +24,8 @@ let createField = document.getElementById("create-field");
 document.getElementById("create-form")
 .addEventListener("submit", function (e) {
     e.preventDefault();
-
     axios
-    .post("/create-item", {reja: createField.value })
+    .post("/create-item", {reja: createField.value }) //url &
     .then((response) => {
         document
         .getElementById("item-list")
@@ -34,4 +36,24 @@ document.getElementById("create-form")
     .catch((err) => {
         console.log("Iltimos qaytadan harakat qiling!");
     });
+});
+//delete & edit
+document.addEventListener("click", function(e) {
+// delete oper
+console.log(e.target);
+  if(e.target.classList.contains("delete-me")) {
+    if(confirm("Aniq ochirmnoqchimisiz?")) {
+      axios
+      .post("/delete-item", {id: e.target.getAttribute("data-id")})
+      .then((response) => {
+        console.log(response.data);
+        e.target.parentElement.parentElement.remove();
+      })
+      .catch((err) => {"Iltimos qaytadan harakat qiling!"});
+    }
+  }
+//edit oper
+  if(e.target.classList.contains("edit-me")) {
+    alert("siz edit tugmasini bosdingiz");
+  }
 });
