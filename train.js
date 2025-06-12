@@ -1,3 +1,46 @@
+// C-Task
+const moment = require("moment");
+
+class Shop {
+  constructor(non, lagmon, cola) {
+    this.non = non;
+    this.lagmon = lagmon;
+    this.cola = cola;
+
+    const time = moment().format("HH:mm:ss");
+    this.time = moment().format("HH:mm:ss");
+  }
+
+  sotish(productsName, miqdor) {
+    if (this[productsName] < miqdor) {
+      console.log(
+        `${this.time} Yetarlicha ${productsName} yo'q. jami: ${this[productsName]}ta ${productsName} bor`
+      );
+      return;
+    }
+    this[productsName] -= miqdor;
+    console.log(`${this.time} ${miqdor}ta ${productsName} sotildi`);
+  }
+
+  qabul(productsName, miqdor) {
+    this[productsName] += miqdor;
+    console.log(
+      `${this.time} ${miqdor}ta ${productsName} qoshildi: jami:${this[productsName]}ta ${productsName} bor`
+    );
+  }
+
+  qoldiq() {
+    console.log(
+      `${this.time} Skladda ${this.non}ta non, ${this.lagmon}ta lagmon va ${this.cola}ta cola mavjud.`
+    );
+  }
+}
+
+const myShop = new Shop(4, 5, 2);
+
+myShop.sotish("non", 3);
+myShop.qabul("cola", 4);
+myShop.qoldiq();
 // // B task
 // function countDigits(str) {
 //   let count = 0;
