@@ -1,46 +1,57 @@
-// C-Task
-const moment = require("moment");
-
-class Shop {
-  constructor(non, lagmon, cola) {
-    this.non = non;
-    this.lagmon = lagmon;
-    this.cola = cola;
-
-    const time = moment().format("HH:mm:ss");
-    this.time = moment().format("HH:mm:ss");
-  }
-
-  sotish(productsName, miqdor) {
-    if (this[productsName] < miqdor) {
-      console.log(
-        `${this.time} Yetarlicha ${productsName} yo'q. jami: ${this[productsName]}ta ${productsName} bor`
-      );
-      return;
-    }
-    this[productsName] -= miqdor;
-    console.log(`${this.time} ${miqdor}ta ${productsName} sotildi`);
-  }
-
-  qabul(productsName, miqdor) {
-    this[productsName] += miqdor;
-    console.log(
-      `${this.time} ${miqdor}ta ${productsName} qoshildi: jami:${this[productsName]}ta ${productsName} bor`
-    );
-  }
-
-  qoldiq() {
-    console.log(
-      `${this.time} Skladda ${this.non}ta non, ${this.lagmon}ta lagmon va ${this.cola}ta cola mavjud.`
-    );
-  }
+// D task
+function compare(word1, word2) {
+    let array1 = word1.split('').sort().join('');
+    let array2 = word2.split('').sort().join('');
+    return array1 === array2;
 }
+console.log(compare("mitgroup", "gtmirpuo"));
+console.log(compare("jamshid", "ajshimd"));
+console.log(compare("Javascript", "Python"));
+console.log(compare("learnenglish", "englishlearn"));
+console.log(compare("watermelon", " nlwaetrome"));
+// C-Task
+// const moment = require("moment");
 
-const myShop = new Shop(4, 5, 2);
+// class Shop {
+//   constructor(non, lagmon, cola) {
+//     this.non = non;
+//     this.lagmon = lagmon;
+//     this.cola = cola;
 
-myShop.sotish("non", 3);
-myShop.qabul("cola", 4);
-myShop.qoldiq();
+//     const time = moment().format("HH:mm:ss");
+//     this.time = moment().format("HH:mm:ss");
+//   }
+
+//   sotish(productsName, miqdor) {
+//     if (this[productsName] < miqdor) {
+//       console.log(
+//         `${this.time} Yetarlicha ${productsName} yo'q. jami: ${this[productsName]}ta ${productsName} bor`
+//       );
+//       return;
+//     }
+//     this[productsName] -= miqdor;
+//     console.log(`${this.time} ${miqdor}ta ${productsName} sotildi`);
+//   }
+
+//   qabul(productsName, miqdor) {
+//     this[productsName] += miqdor;
+//     console.log(
+//       `${this.time} ${miqdor}ta ${productsName} qoshildi: jami:${this[productsName]}ta ${productsName} bor`
+//     );
+//   }
+
+//   qoldiq() {
+//     console.log(
+//       `${this.time} Skladda ${this.non}ta non, ${this.lagmon}ta lagmon va ${this.cola}ta cola mavjud.`
+//     );
+//   }
+// }
+
+// const myShop = new Shop(4, 5, 2);
+
+// myShop.sotish("non", 3);
+// myShop.qabul("cola", 4);
+// myShop.qoldiq();
 // // B task
 // function countDigits(str) {
 //   let count = 0;
