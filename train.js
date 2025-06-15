@@ -1,14 +1,25 @@
-// D task
-function compare(word1, word2) {
-    let array1 = word1.split('').sort().join('');
-    let array2 = word2.split('').sort().join('');
-    return array1 === array2;
+// E task
+function goReverse(string) {
+    return string.split('').reverse().join('');
 }
-console.log(compare("mitgroup", "gtmirpuo"));
-console.log(compare("jamshid", "ajshimd"));
-console.log(compare("Javascript", "Python"));
-console.log(compare("learnenglish", "englishlearn"));
-console.log(compare("watermelon", " nlwaetrome"));
+console.log(goReverse("James"));
+console.log(goReverse("MIT30"));
+console.log(goReverse("UNITED STATES AMERICA"));
+console.log(goReverse("Express JS"));
+
+
+
+// D task
+// function compare(word1, word2) {
+//     let array1 = word1.split('').sort().join('');
+//     let array2 = word2.split('').sort().join('');
+//     return array1 === array2;
+// }
+// console.log(compare("mitgroup", "gtmirpuo"));
+// console.log(compare("jamshid", "ajshimd"));
+// console.log(compare("Javascript", "Python"));
+// console.log(compare("learnenglish", "englishlearn"));
+// console.log(compare("watermelon", " nlwaetrome"));
 // C-Task
 // const moment = require("moment");
 
