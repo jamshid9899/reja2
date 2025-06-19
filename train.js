@@ -1,11 +1,24 @@
-// E task
-function goReverse(string) {
-    return string.split('').reverse().join('');
+// F Task
+function findDoublelers(string) {
+    return string.split('').some((value, index) => {
+        return string.indexOf(value) !== index;
+    });
 }
-console.log(goReverse("James"));
-console.log(goReverse("MIT30"));
-console.log(goReverse("UNITED STATES AMERICA"));
-console.log(goReverse("Express JS"));
+console.log(findDoublelers("beer"));
+console.log(findDoublelers("table"));
+console.log(findDoublelers("ordered"));
+console.log(findDoublelers("Izatullo"));
+console.log(findDoublelers("notebook"));
+
+
+// E task
+// function goReverse(string) {
+//     return string.split('').reverse().join('');
+// }
+// console.log(goReverse("James"));
+// console.log(goReverse("MIT30"));
+// console.log(goReverse("UNITED STATES AMERICA"));
+// console.log(goReverse("Express JS"));
 
 
 
